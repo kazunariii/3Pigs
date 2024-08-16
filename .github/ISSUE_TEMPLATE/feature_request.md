@@ -1,20 +1,35 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+## Ticket / Issue Number
 
----
+チケット番号などを記入してください
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+（記入例：#3）
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## What's changed
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+このプルリクは何をしたのかを記入してください。画像とテキストを使って説明するのがおすすめです。
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+* ホームページのUIを調整しました
+* Primary Colorを`#0969DA`へ変更しました（@ianchen0419 確認お願いします）
+* Bugを修復しました :+1:
+* デプロイしました（[デプロイ先](https://pages.github.com/)）
+
+## Todo List
+
+今回のプルリクはまだやっていないことや、将来やる予定の事項を記入してください
+
+- [x] デザイナーに確認してもらいます
+- [ ] iOS 16のデバイスにテストします
+- [ ] テストケースを書きます
+
+## Check List
+
+- [x] ESLintはエラーや警告は出ませんでした
+- [x] `npm run build`を使ってエラーは出ませんでした
+- [ ] Storybookを確認しました
+- [ ] iPhone Safariで画面を確認しました
+- [ ] Android Chromeで画面を確認しました
+- [ ] 相応したテストケースを書きました
+
+## Remark
+
+補足事項があれば記入してください
