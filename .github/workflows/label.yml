@@ -17,7 +17,8 @@ jobs:
     permissions:
       issues: write
     steps:
-      - run: if (github.event.label.name != "") gh issue edit "$NUMBER" --add-label "$LABELS"
+      - if: github.event.label.name == ''
+        run: gh issue edit "$NUMBER" --add-label "$LABELS"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
