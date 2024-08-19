@@ -18,7 +18,8 @@ jobs:
       issues: write
     steps:
       - if: github.event.label.name == ''
-        run: gh issue edit "$NUMBER" --add-label "$LABELS"
+        run: |
+          gh issue edit "$NUMBER" --add-label "$LABELS"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
